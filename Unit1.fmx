@@ -1,11 +1,58 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Fake news reader'
   ClientHeight = 480
   ClientWidth = 640
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
   DesignerMasterStyle = 0
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
+    ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ItemAppearance.ItemHeight = 100
+    ItemAppearanceObjects.ItemObjects.Text.Width = 507.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Text.Height = 25.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Text.PlaceOffset.X = 88.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Text.PlaceOffset.Y = 8.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Detail.TextVertAlign = Leading
+    ItemAppearanceObjects.ItemObjects.Detail.Width = 501.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Detail.Height = 68.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Detail.PlaceOffset.X = 90.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Detail.PlaceOffset.Y = 32.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+    ItemAppearanceObjects.ItemObjects.Image.Width = 71.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Image.Height = 70.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Image.PlaceOffset.X = 8.000000000000000000
+    ItemAppearanceObjects.HeaderObjects.Text.Width = 557.000000000000000000
+    ItemAppearanceObjects.HeaderObjects.Text.Height = 89.000000000000000000
+    ItemAppearanceObjects.HeaderObjects.Text.PlaceOffset.X = 14.000000000000000000
+    ItemAppearanceObjects.HeaderObjects.Text.PlaceOffset.Y = 2.000000000000000000
+    ItemAppearanceObjects.FooterObjects.Text.Width = 595.000000000000000000
+    ItemAppearanceObjects.FooterObjects.Text.PlaceOffset.X = 8.000000000000000000
+    object Panel1: TPanel
+      Align = Bottom
+      Position.Y = 440.000000000000000000
+      Size.Width = 640.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Button1: TButton
+        Position.X = 528.000000000000000000
+        Position.Y = 8.000000000000000000
+        TabOrder = 0
+        Text = 'Refresh'
+        OnClick = Button1Click
+      end
+    end
+  end
 end
